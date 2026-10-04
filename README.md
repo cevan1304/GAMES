@@ -1,2 +1,2 @@
 # GAMES
-My games
+CevanAI games collection
