@@ -30,11 +30,8 @@
     .game.river .poster{background:#26392c}
     .game.river .poster img{object-fit:contain;padding:14px}
     .game.tamagotchi .poster img{object-position:center 58%}
-    .game.atari .poster{display:flex;align-items:center;justify-content:center;gap:20px;background:linear-gradient(140deg,#202c3b,#10161f);color:var(--gold);padding:22px}
-    .atari-symbol{width:64px;height:64px;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
-    .atari-wordmark{display:flex;flex-direction:column;gap:8px;min-width:0}
-    .atari-wordmark strong{font-size:clamp(1.8rem,3vw,2.5rem);letter-spacing:.08em;line-height:1}
-    .atari-wordmark span{font-size:.8125rem;letter-spacing:.1em;line-height:1.4;color:#d2d7df}
+    .game.atari .poster{display:block;padding:0;background:#fff;}
+    .game.atari .poster img{object-fit:contain;object-position:center;}
     .card-body{display:flex;flex-direction:column;flex:1;padding:25px 24px 23px}
     .genre{margin:0 0 9px;font-size:.875rem;color:var(--muted);line-height:1.5}
     h2{margin:0;font-size:1.625rem;line-height:1.25;letter-spacing:-.03em}
@@ -49,15 +46,6 @@
     @media(max-width:920px){.games{grid-template-columns:repeat(2,minmax(0,1fr))}.shell{padding:28px 24px}.games{gap:16px}.card-body{padding:20px 18px}h2{font-size:1.4rem}}
     @media(max-width:700px){.shell{max-width:510px;padding:24px 20px 28px}.masthead{padding-bottom:20px}.intro{padding:30px 0 24px}.games{grid-template-columns:1fr;gap:22px}.poster{aspect-ratio:16/9}.card-body{padding:22px}h2{font-size:1.625rem}.play{margin-top:22px}.note{margin-top:24px}footer{margin-top:36px}}
     @media(prefers-reduced-motion:reduce){.game,.poster img{transition:none}.game:hover{transform:none}.game:hover .poster img{transform:none}}
-    .game.atari .poster {
-  display: block;
-  padding: 0;
-  background: #fff;
-}
-.game.atari .poster img {
-  object-fit: contain;
-  object-position: center;
-}
   </style>
 </head>
 <body>
