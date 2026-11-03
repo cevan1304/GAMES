@@ -49,6 +49,15 @@
     @media(max-width:920px){.games{grid-template-columns:repeat(2,minmax(0,1fr))}.shell{padding:28px 24px}.games{gap:16px}.card-body{padding:20px 18px}h2{font-size:1.4rem}}
     @media(max-width:700px){.shell{max-width:510px;padding:24px 20px 28px}.masthead{padding-bottom:20px}.intro{padding:30px 0 24px}.games{grid-template-columns:1fr;gap:22px}.poster{aspect-ratio:16/9}.card-body{padding:22px}h2{font-size:1.625rem}.play{margin-top:22px}.note{margin-top:24px}footer{margin-top:36px}}
     @media(prefers-reduced-motion:reduce){.game,.poster img{transition:none}.game:hover{transform:none}.game:hover .poster img{transform:none}}
+    .game.atari .poster {
+  display: block;
+  padding: 0;
+  background: #fff;
+}
+.game.atari .poster img {
+  object-fit: contain;
+  object-position: center;
+}
   </style>
 </head>
 <body>
@@ -78,8 +87,9 @@
           <div class="card-body"><p class="genre">Virtual pet</p><h2>Tamagotchi</h2><span class="play"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5a.8.8 0 0 1 1.2-.7l8 5.5a.85.85 0 0 1 0 1.4l-8 5.5a.8.8 0 0 1-1.2-.7z"/></svg>Play</span></div>
         </a>
         <a class="game atari" href="assets/Atari_Game_Station.html" target="_blank" rel="noopener noreferrer" aria-label="Open Atari Game Station in a new tab">
-          <div class="poster" aria-hidden="true"><svg class="atari-symbol" viewBox="0 0 24 24"><path d="M6 12h4m-2-2v4m7-1h.01M18 11h.01M7 6h10a4 4 0 0 1 4 3.4l1 7a2 2 0 0 1-3.3 1.8L16 16H8l-2.7 2.2A2 2 0 0 1 2 16.4l1-7A4 4 0 0 1 7 6Z"/></svg><div class="atari-wordmark"><strong>ATARI</strong><span>GAME STATION · 75 GAMES</span></div></div>
-          <div class="card-body"><p class="genre">8-bit game collection</p><h2>Atari Game Station</h2><span class="play"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5a.8.8 0 0 1 1.2-.7l8 5.5a.85.85 0 0 1 0 1.4l-8 5.5a.8.8 0 0 1-1.2-.7z"/></svg>Play</span></div>
+          <div class="poster">
+          <img src="assets/ATARI.png" alt="A collage of classic Atari games">
+          </div>
         </a>
       </div>
       <p class="note"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="6" y="3" width="11" height="11" rx="2"/><path d="M3 7v8a2 2 0 0 0 2 2h8"/></svg>Each game opens in a new tab.</p>
